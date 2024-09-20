@@ -58,11 +58,13 @@ html {
 
 height: 100%;
 width: 100%;
+font-family: "Roboto", sans-serif;
 
 }
 
 body {
 
+    background-color: #ffffff;
     height: 100%;
 
 }
@@ -76,22 +78,26 @@ body {
 }
 
 .header {
-    border: 3px solid black;
+    border: 3px solid silver;
     grid-column: 2/4;
     grid-row: 1/2;
 }
 
 .sidebar {
 
-    border: 3px solid black;
+    border: 3px solid silver;
     grid-column: 1/2;
     grid-row: 1/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr 5fr;
+
 }
 
 .article {
 
     display: grid;
-    border: 3px solid black;
+    border: 3px solid silver;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr;
 }
@@ -101,7 +107,7 @@ body {
     display: grid;
     grid-column: 1/2;
     grid-row: 1/2;
-    border: 2px solid black;
+    border: 2px solid silver;
     grid-template-rows: 3fr 2fr;
     grid-template-columns: 1fr;
 
@@ -113,7 +119,7 @@ body {
     display: grid;
     grid-row: 1/2;
     grid-column: 1/2;
-    border: 2px solid black;   
+     
 }
 .charttitle {
 
@@ -122,14 +128,44 @@ body {
 
 }
 
+.currentlyReading {
 
-.bookStats {
-
-        grid-row: 2/3;
-        grid-column: 1/2;
-    border-top: 2px solid black;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
 }
 
+.booktitle {
+
+    grid-row: 1/2;
+    place-self: center;
+    font-weight: 800;
+}
+.bookStats {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row: 2/3;
+    grid-column: 1/2;
+    text-align: center;
+}
+
+.book {
+
+    position: relative;
+    border: 2px solid silver;
+    color:rgb(32, 31, 31);
+    margin: 10px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    width: 250px;
+    height: 125px;
+    place-self: center;
+    text-align: start;
+    padding-left: 15px;
+    padding-top: 10px;
+}
 
 .news {
 
@@ -139,6 +175,10 @@ body {
 
 }
 
+/*.title, .sites {
+
+    margin-left: 100px;
+}
 
 
 
@@ -159,14 +199,15 @@ body {
     display: grid;
     width: 550px;
     height: 330px;
-    background-color: #FDCD8F;
-    border-top: 3px solid black;
-    border-right: 3px solid black;
-    border-top-right-radius: 10px;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 2px solid silver;
+    border-radius: 10px;
     grid-template-columns: 0.5fr repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr) 1fr;
-    column-gap: 4px;
+    grid-template-rows: repeat(12, 1fr);
+    column-gap: 6px;
     place-self: center;
+    margin-bottom: 1rem;
 }
 
 
@@ -180,8 +221,7 @@ body {
     text-align: center;
     column-gap: 6px;
     font-weight: bold;
-    border-bottom: 3px solid black;
-    border-left: 3px solid black;
+  
     padding-right: 3px;
 
 
@@ -196,92 +236,94 @@ body {
     text-align: right;
     font-weight: 800;
     font-size: 0.8rem;
-    border-right: 2px solid black;
-    border-left: 3px solid black;
+    
+
+    
 }
+
 
 .chartJan {
 
     border: 2px solid black;
     grid-row: 7/13;
-    background-color: #DC6F60;
+    background-color: #1BCFB4;
 }
 
 .chartFeb {
 
     border: 2px solid black;
     grid-row: 11/13;
-    background-color: #DC6F60;;
+    background-color: #1BCFB4;;
 }
 
 .chartMar {
 
     border: 2px solid black;
     grid-row: 2/13;
-    background-color: #DC6F60;;
+    background-color: #1BCFB4;;
 }
 
 .chartApr {
 
     border: 2px solid black;
     grid-row: 12/13;
-    background-color: #DC6F60;;
+    background-color: #1BCFB4;;
 }
 
 .chartMay {
 
     border: 2px solid black;
     grid-row: 5/13;
-    background-color: #DC6F60;;
+    background-color: #1BCFB4;;
 }
 
 .chartJun {
 
     border: 2px solid black;
     grid-row: 4/13;
-    background-color: #DC6F60;;
+    background-color: #1BCFB4;;
 }
 
 .chartJul {
 
     border: 2px solid black;
     grid-row: 2/13;
-    background-color: #DC6F60;;
+    background-color: #1BCFB4;;
 }
 
 .chartAug {
 
     border: 2px solid black;
     grid-row: 10/13;
-    background-color: #DC6F60;;
+    background-color: #1BCFB4;;
 }
 
 .chartSep {
 
     border: 2px solid black;
     grid-row: 9/13;
-    background-color: #DC6F60;;
+    background-color: #1BCFB4;;
 }
 
 .chartOct {
 
     border: 2px solid black;
     grid-row: 7/13;
-    background-color: #DC6F60;;
+    background-color: #1BCFB4;;
 }
 
 .chartNov {
 
     border: 2px solid black;
     grid-row: 3/13;
-    background-color: #DC6F60;;
+    background-color: #1BCFB4;;
 }
 
 .chartDez {
 
     border: 2px solid black;
     grid-row: 11/13;
-    background-color: #DC6F60;
+    background-color: #1BCFB4;
     margin-right: 3px;
 }
 
