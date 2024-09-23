@@ -168,7 +168,7 @@ label {
     display: grid;
     grid-column: 1/2;
     grid-row: 1/2;
-    grid-template-rows: 3fr 2fr;
+    grid-template-rows: 4fr 3fr;
     grid-template-columns: 1fr;
 
 
@@ -179,6 +179,7 @@ label {
     display: grid;
     grid-row: 1/2;
     grid-column: 1/2;
+    grid-template-rows: 0.5fr 5fr;
      
 }
 .charttitle {
@@ -214,13 +215,13 @@ label {
 
     position: relative;
     border: 2px solid silver;
-    color:rgb(32, 31, 31);
+    color:rgb(73, 73, 73);
     margin: 10px;
     border-radius: 10px;
     font-weight: 700;
     font-size: 18px;
     width: 250px;
-    height: 125px;
+    height: 115px;
     place-self: center;
     text-align: start;
     padding-left: 15px;
@@ -295,6 +296,8 @@ label {
     font-weight: 800;
 }
 
+/* Trending-Box */
+
 .trending {
     display: grid;
     grid-template-rows: 0.5fr 5fr;
@@ -310,13 +313,42 @@ label {
 
     border: 2px solid silver;
     border-radius: 10px;
-    padding: 1rem;
     background-color: #ffffff;
     box-shadow: 3px 6px 4px -4px rgba(0,0,0,0.20);
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     margin-right: 0.7rem;
+    align-items: center;
 }
+
+.trendingContentCases {
+
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 0.7fr;
+}
+
+.trendingContentIcon {
+
+    min-height: 60px;
+    max-height: 60px;
+    min-width: 60px;
+    max-width: 60px;
+    place-self: center;
+    border-radius: 50px;
+}
+
+.trendingContentText {
+justify-self: start;
+align-self: center;
+font-size: 0.9rem;
+
+}
+
+.trendingContentText::first-line {
+    font-weight: 700;
+}
+
 
 
 /* For Chart-Container! */
@@ -383,84 +415,84 @@ label {
 
     border: 2px solid black;
     grid-row: 7/13;
-    background-color: #1BCFB4;
+    background-color: #ae0a0a;
 }
 
 .chartFeb {
 
     border: 2px solid black;
     grid-row: 11/13;
-    background-color: #1BCFB4;;
+    background-color: #ae0a0a;;
 }
 
 .chartMar {
 
     border: 2px solid black;
     grid-row: 2/13;
-    background-color: #1BCFB4;;
+    background-color: #ae0a0a;;
 }
 
 .chartApr {
 
     border: 2px solid black;
     grid-row: 12/13;
-    background-color: #1BCFB4;;
+    background-color: #ae0a0a;;
 }
 
 .chartMay {
 
     border: 2px solid black;
     grid-row: 5/13;
-    background-color: #1BCFB4;;
+    background-color: #ae0a0a;;
 }
 
 .chartJun {
 
     border: 2px solid black;
     grid-row: 4/13;
-    background-color: #1BCFB4;;
+    background-color: #ae0a0a;;
 }
 
 .chartJul {
 
     border: 2px solid black;
     grid-row: 2/13;
-    background-color: #1BCFB4;;
+    background-color: #ae0a0a;;
 }
 
 .chartAug {
 
     border: 2px solid black;
     grid-row: 10/13;
-    background-color: #1BCFB4;;
+    background-color: #ae0a0a;;
 }
 
 .chartSep {
 
     border: 2px solid black;
     grid-row: 9/13;
-    background-color: #1BCFB4;;
+    background-color: #ae0a0a;;
 }
 
 .chartOct {
 
     border: 2px solid black;
     grid-row: 7/13;
-    background-color: #1BCFB4;;
+    background-color: #ae0a0a;;
 }
 
 .chartNov {
 
     border: 2px solid black;
     grid-row: 3/13;
-    background-color: #1BCFB4;;
+    background-color: #ae0a0a;;
 }
 
 .chartDez {
 
     border: 2px solid black;
     grid-row: 11/13;
-    background-color: #1BCFB4;
+    background-color: #ae0a0a;
     margin-right: 3px;
 }
 
