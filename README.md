@@ -1,6 +1,15 @@
-# Dashboard
+# Admin Dashboard
 
-I’m currently working on a project for The Odin Project, which involves building a dashboard using CSS Grid. Unfortunately, I’m working on a Mac at my workplace and can’t connect it to GitHub directly. As a result, I have to manually commit code by copying and pasting into the browser, which is quite tedious.
+A static admin dashboard layout using HTML and CSS Grid.  
+Built as part of The Odin Project Intermediate HTML and CSS Course.
 
-Once, I accidentally overwrote all of my data with the wrong code due to a mistake during the pasting process, which was frustrating.
-I'm sorry, if my commits are hard to follow.
+## Tasks
+- Grid-based layout with sidebar, header, and main content  
+- Nested grids for navigation, search, user info, project cards, etc.  
+- Uses custom fonts and icons (e.g. Google Fonts + Material Icons)  
+- Dummy content and placeholder images for layout testing  
+- Non-responsive, desktop only
+
+Focus: CSS Grid practice.
+
+Live Demo: https://lucadeeken.github.io/Dashboard/
